@@ -7,7 +7,7 @@ class Detector:
         self.r = r
         self.a = a
         
-        # Точки распределим равномерно по поверхности сферы
+        # Точки равномерно по поверхности сферы
         z = np.random.uniform(-self.R, self.R, N)
         phi = np.random.uniform(0, 2 * np.pi, N)
         
