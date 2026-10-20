@@ -53,3 +53,6 @@ class Detector:
         if distances[closest_idx] <= self.r:
             return closest_idx
         return -1
+
+    def generate_photoelectrons(self, num_hits):
+        return np.random.poisson(self.a, size=num_hits)
